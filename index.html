@@ -387,7 +387,7 @@ fm.addEventListener('submit',async e=>{
     const d=Object.fromEntries(new FormData(qf));d.createdAt=new Date().toISOString();d.lang=LANG;
     qm.textContent=M().sending;
     try{
-    await fetch (https://script.google.com/macros/s/AKfycbxWP-Mqo23KeLLW8Q9gjrITqHBpVOTXPbc_Dp9tt5Cb829WUcnHQv7RBc8Em4tF0Aeh/exec',{method:'POST' ,mode:'no-cross',body:JSON.stringify(d)});
+    await fetch (https://script.google.com/macros/s/AKfycbzEB-8Ncbf7tItK7qmVmxq3BVWZNkZwFbnQnwqdOdA9diJ7G77dDzrkzbXOGSuff5xt/exec',{method:'POST' ,mode:'no-cross',body:JSON.stringify(d)});
       
       qm.textContent=M().okq;qf.reset();
     }catch(_){
