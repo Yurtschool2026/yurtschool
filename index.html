@@ -387,9 +387,8 @@ fm.addEventListener('submit',async e=>{
     const d=Object.fromEntries(new FormData(qf));d.createdAt=new Date().toISOString();d.lang=LANG;
     qm.textContent=M().sending;
     try{
-      const db=await claude.use('db');
-      if(!db)throw 0;
-      await db.collection('questions').doc('q'+Date.now()).set(d);
+    await fetch (https://script.google.com/macros/s/AKfycbxWP-Mqo23KeLLW8Q9gjrITqHBpVOTXPbc_Dp9tt5Cb829WUcnHQv7RBc8Em4tF0Aeh/exec',{method:'POST' ,mode:'no-cross',body:JSON.stringify(d)});
+      
       qm.textContent=M().okq;qf.reset();
     }catch(_){
       const body=Object.entries(d).map(([k,v])=>k+': '+v).join('\n');
